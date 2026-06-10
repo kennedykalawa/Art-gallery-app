@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery | Vanguard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">VANGUARD</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header collection-header container">
+        <span class="section-kicker">Browse the Archive</span>
+        <h1>The Collection</h1>
+        <p>Filter by medium and keep the presentation clean, spacious, and editorial.</p>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="oil">Oil</button>
+            <button class="filter-btn" data-category="abstract">Abstract</button>
+            <button class="filter-btn" data-category="photography">Photography</button>
+            <button class="filter-btn" data-category="watercolor">Watercolor</button>
+        </div>
+        <section class="masonry-grid" id="gallery-grid">
+            <!-- All artworks will be injected here by JS -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Vanguard Gallery. All rights reserved.</p>
+            <!--<div class="dev-tag">Developed by ktec</div>-->
+            <div class="dev-tag">Developed by <a href="https://kennedykalawa.github.io/portfolio-sample/"> ktec</a>
+
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
